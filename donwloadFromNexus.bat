@@ -1,0 +1,1 @@
+curl -L -X GET -U admin:admin "http://localhost:8081/service/rest/v1/search/assets/download?sort=version&repository=snapshots&maven.groupId=tn.esprit.spring&maven.artifactId=Timesheet-spring-boot-core-data-jpa-mvc-REST-1&maven.extension=war" --output target/FromNexus.war
