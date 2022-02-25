@@ -11,9 +11,9 @@ services:
     volumes:
       - db:/var/lib/mysql
   app:
+    image: zyedziadi1993/projetdevops:${tag}
     depends_on:
       - mysqldb
-    build: ./
     restart: on-failure
     ports:
       - 6868:6868
