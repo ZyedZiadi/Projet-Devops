@@ -1,153 +1,211 @@
-2022-02-23 11:18:15.980  INFO 20404 --- [main] t.esprit.spring.EmployeServiceImplTests  : Starting EmployeServiceImplTests on LAPTOP-3DTOK93U with PID 20404 (started by medkh in C:\Users\medkh\Documents\TimesheetV2-spring-boot-core-data-jpa-mvc-REST-1)
-2022-02-23 11:18:15.986  INFO 20404 --- [main] t.esprit.spring.EmployeServiceImplTests  : No active profile set, falling back to default profiles: default
-2022-02-23 11:18:16.872  INFO 20404 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2022-02-23 11:18:16.994  INFO 20404 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109ms. Found 6 repository interfaces.
-2022-02-23 11:18:17.494  INFO 20404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a1d86d66] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-02-23 11:18:17.969  INFO 20404 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-02-23 11:18:18.183  INFO 20404 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-02-23 11:18:18.258  INFO 20404 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2022-02-25 17:35:36.631  INFO 30140 --- [main] SpringBootCoreDataJpaMvcRest1Application : Starting TimesheetSpringBootCoreDataJpaMvcRest1Application on LAPTOP-8B01LE5O with PID 30140 (started by zyedz in C:\Users\zyedz\Desktop\Projet Devops\Projet-Devops)
+2022-02-25 17:35:36.644  INFO 30140 --- [main] SpringBootCoreDataJpaMvcRest1Application : No active profile set, falling back to default profiles: default
+2022-02-25 17:35:37.319  INFO 30140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-02-25 17:35:37.402  INFO 30140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74ms. Found 6 repository interfaces.
+2022-02-25 17:35:37.705  INFO 30140 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1bc6abc5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-25 17:35:38.136  INFO 30140 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-02-25 17:35:38.159  INFO 30140 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-25 17:35:38.159  INFO 30140 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2022-02-25 17:35:38.271  INFO 30140 --- [main] o.a.c.c.C.[.[localhost].[/SpringMVC]     : Initializing Spring embedded WebApplicationContext
+2022-02-25 17:35:38.271  INFO 30140 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1591 ms
+2022-02-25 17:35:38.425  INFO 30140 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-25 17:35:38.520  INFO 30140 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-25 17:35:38.570  INFO 30140 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2022-02-23 11:18:18.353  INFO 20404 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
-2022-02-23 11:18:18.355  INFO 20404 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2022-02-23 11:18:18.517  INFO 20404 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2022-02-23 11:18:18.798  INFO 20404 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2022-02-23 11:18:19.866  INFO 20404 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-02-23 11:18:20.424  INFO 20404 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
-2022-02-23 11:18:22.046  INFO 20404 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-02-23 11:18:22.147  WARN 20404 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-02-23 11:18:22.688  INFO 20404 --- [main] t.esprit.spring.EmployeServiceImplTests  : Started EmployeServiceImplTests in 7.108 seconds (JVM running for 8.457)
-2022-02-23 11:18:22.817  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : ajouterDepartement
-2022-02-23 11:18:22.899  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method ajouterDepartement execution time: 84 milliseconds.
-2022-02-23 11:18:22.900  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : ajouterDepartement
-2022-02-23 11:18:22.900  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : getSalaireMoyenByDepartementId
-2022-02-23 11:18:22.946  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method getSalaireMoyenByDepartementId execution time: 46 milliseconds.
-2022-02-23 11:18:22.947  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : getSalaireMoyenByDepartementId
-2022-02-23 11:18:22.948  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : deleteDepartementById
-2022-02-23 11:18:22.980  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method deleteDepartementById execution time: 32 milliseconds.
-2022-02-23 11:18:22.980  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : deleteDepartementById
-2022-02-23 11:18:22.994  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : ajouterEmploye
-2022-02-23 11:18:23.000  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method ajouterEmploye execution time: 6 milliseconds.
-2022-02-23 11:18:23.000  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : ajouterEmploye
-2022-02-23 11:18:23.000  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : ajouterContrat
-2022-02-23 11:18:23.017  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method ajouterContrat execution time: 17 milliseconds.
-2022-02-23 11:18:23.017  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : ajouterContrat
-2022-02-23 11:18:23.025  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : ajouterEmploye
-2022-02-23 11:18:23.029  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method ajouterEmploye execution time: 4 milliseconds.
-2022-02-23 11:18:23.029  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : ajouterEmploye
-2022-02-23 11:18:23.029  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : mettreAjourEmailByEmployeId
-2022-02-23 11:18:23.049  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method mettreAjourEmailByEmployeId execution time: 20 milliseconds.
-2022-02-23 11:18:23.049  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : mettreAjourEmailByEmployeId
-2022-02-23 11:18:23.049  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : findEmployeById
-2022-02-23 11:18:23.054  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method findEmployeById execution time: 5 milliseconds.
-2022-02-23 11:18:23.055  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : findEmployeById
-2022-02-23 11:18:23.055  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : deleteEmployeById
-2022-02-23 11:18:23.068  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method deleteEmployeById execution time: 13 milliseconds.
-2022-02-23 11:18:23.068  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : deleteEmployeById
-2022-02-23 11:18:23.070  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : ajouterEmploye
-2022-02-23 11:18:23.073  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method ajouterEmploye execution time: 3 milliseconds.
-2022-02-23 11:18:23.074  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : ajouterEmploye
-2022-02-23 11:18:23.074  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : getSalaireByEmployeIdJPQL
-2022-02-23 11:18:23.077  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method getSalaireByEmployeIdJPQL execution time: 3 milliseconds.
-2022-02-23 11:18:23.078  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : getSalaireByEmployeIdJPQL
-2022-02-23 11:18:23.078  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : deleteEmployeById
-2022-02-23 11:18:23.088  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method deleteEmployeById execution time: 10 milliseconds.
-2022-02-23 11:18:23.089  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : deleteEmployeById
-2022-02-23 11:18:23.092  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : ajouterEmploye
-2022-02-23 11:18:23.096  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method ajouterEmploye execution time: 4 milliseconds.
-2022-02-23 11:18:23.096  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : ajouterEmploye
-2022-02-23 11:18:23.096  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : getEmployePrenomById
-2022-02-23 11:18:23.102  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method getEmployePrenomById execution time: 6 milliseconds.
-2022-02-23 11:18:23.103  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : getEmployePrenomById
-2022-02-23 11:18:23.103  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : deleteEmployeById
-2022-02-23 11:18:23.112  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method deleteEmployeById execution time: 9 milliseconds.
-2022-02-23 11:18:23.113  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : deleteEmployeById
-2022-02-23 11:18:23.120  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : getContratById
-2022-02-23 11:18:23.125  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method getContratById execution time: 5 milliseconds.
-2022-02-23 11:18:23.126  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : getContratById
-2022-02-23 11:18:23.133  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : ajouterContrat
-2022-02-23 11:18:23.137  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method ajouterContrat execution time: 4 milliseconds.
-2022-02-23 11:18:23.137  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : ajouterContrat
-2022-02-23 11:18:23.137  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : deleteContratById
-2022-02-23 11:18:23.141  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method deleteContratById execution time: 4 milliseconds.
-2022-02-23 11:18:23.141  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : deleteContratById
-2022-02-23 11:18:23.147  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : ajouterEmploye
-2022-02-23 11:18:23.152  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method ajouterEmploye execution time: 5 milliseconds.
-2022-02-23 11:18:23.152  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : ajouterEmploye
-2022-02-23 11:18:23.152  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : deleteEmployeById
-2022-02-23 11:18:23.155  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method deleteEmployeById execution time: 3 milliseconds.
-2022-02-23 11:18:23.156  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : deleteEmployeById
-2022-02-23 11:18:23.160  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : getAllEmployeByEntreprise
-2022-02-23 11:18:23.173  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method getAllEmployeByEntreprise execution time: 13 milliseconds.
-2022-02-23 11:18:23.173  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : getAllEmployeByEntreprise
-2022-02-23 11:18:23.175  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : ajouterEmploye
-2022-02-23 11:18:23.178  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method ajouterEmploye execution time: 3 milliseconds.
-2022-02-23 11:18:23.178  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : ajouterEmploye
-2022-02-23 11:18:23.179  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : mettreAjourEmailByEmployeIdJPQL
-2022-02-23 11:18:23.184  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method mettreAjourEmailByEmployeIdJPQL execution time: 5 milliseconds.
-2022-02-23 11:18:23.184  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : mettreAjourEmailByEmployeIdJPQL
-2022-02-23 11:18:23.185  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : findEmployeById
-2022-02-23 11:18:23.188  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method findEmployeById execution time: 3 milliseconds.
-2022-02-23 11:18:23.188  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : findEmployeById
-2022-02-23 11:18:23.188  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : deleteEmployeById
-2022-02-23 11:18:23.195  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method deleteEmployeById execution time: 7 milliseconds.
-2022-02-23 11:18:23.196  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : deleteEmployeById
-2022-02-23 11:18:23.198  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : ajouterEmploye
-2022-02-23 11:18:23.201  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method ajouterEmploye execution time: 3 milliseconds.
-2022-02-23 11:18:23.201  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : ajouterEmploye
-2022-02-23 11:18:23.201  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : affecterContratAEmploye
-2022-02-23 11:18:23.208  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method affecterContratAEmploye execution time: 7 milliseconds.
-2022-02-23 11:18:23.208  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : affecterContratAEmploye
-2022-02-23 11:18:23.208  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : getContratById
-2022-02-23 11:18:23.210  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method getContratById execution time: 2 milliseconds.
-2022-02-23 11:18:23.210  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : getContratById
-2022-02-23 11:18:23.213  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : ajouterContrat
-2022-02-23 11:18:23.215  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method ajouterContrat execution time: 2 milliseconds.
-2022-02-23 11:18:23.215  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : ajouterContrat
-2022-02-23 11:18:23.215  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : deleteContratById
-2022-02-23 11:18:23.221  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method deleteContratById execution time: 6 milliseconds.
-2022-02-23 11:18:23.221  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : deleteContratById
-2022-02-23 11:18:23.221  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : getContratById
-2022-02-23 11:18:23.223  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method getContratById execution time: 2 milliseconds.
-2022-02-23 11:18:23.224  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : getContratById
-2022-02-23 11:18:23.226  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : ajouterEmploye
-2022-02-23 11:18:23.228  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method ajouterEmploye execution time: 2 milliseconds.
-2022-02-23 11:18:23.228  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : ajouterEmploye
-2022-02-23 11:18:23.229  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : getEmployePrenomById
-2022-02-23 11:18:23.232  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method getEmployePrenomById execution time: 3 milliseconds.
-2022-02-23 11:18:23.232  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : getEmployePrenomById
-2022-02-23 11:18:23.233  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : deleteEmployeById
-2022-02-23 11:18:23.239  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method deleteEmployeById execution time: 6 milliseconds.
-2022-02-23 11:18:23.240  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : deleteEmployeById
-2022-02-23 11:18:23.240  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : getEmployePrenomById
-2022-02-23 11:18:23.242  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method getEmployePrenomById execution time: 2 milliseconds.
-2022-02-23 11:18:23.242  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : getEmployePrenomById
-2022-02-23 11:18:23.244  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : getNombreEmployeJPQL
-2022-02-23 11:18:23.247  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method getNombreEmployeJPQL execution time: 3 milliseconds.
-2022-02-23 11:18:23.247  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : getNombreEmployeJPQL
-2022-02-23 11:18:23.249  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : ajouterEmploye
-2022-02-23 11:18:23.251  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method ajouterEmploye execution time: 2 milliseconds.
-2022-02-23 11:18:23.251  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : ajouterEmploye
-2022-02-23 11:18:23.256  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : ajouterTimesheet
-2022-02-23 11:18:23.271  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method ajouterTimesheet execution time: 15 milliseconds.
-2022-02-23 11:18:23.271  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : ajouterTimesheet
-2022-02-23 11:18:23.271  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : getTimesheetsByMissionAndDate
-2022-02-23 11:18:23.276  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method getTimesheetsByMissionAndDate execution time: 5 milliseconds.
-2022-02-23 11:18:23.276  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : getTimesheetsByMissionAndDate
-2022-02-23 11:18:23.280  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : deleteEmployeById
-2022-02-23 11:18:23.287  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method deleteEmployeById execution time: 7 milliseconds.
-2022-02-23 11:18:23.287  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : deleteEmployeById
-2022-02-23 11:18:23.287  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : removeTimeSheet
-2022-02-23 11:18:23.294 ERROR 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Unable to find tn.esprit.spring.entities.Employe with id 386; nested exception is javax.persistence.EntityNotFoundException: Unable to find tn.esprit.spring.entities.Employe with id 386
-2022-02-23 11:18:23.294  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method removeTimeSheet execution time: 7 milliseconds.
-2022-02-23 11:18:23.294  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : removeTimeSheet
-2022-02-23 11:18:23.297  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : getAllEmployes
-2022-02-23 11:18:23.426  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method getAllEmployes execution time: 129 milliseconds.
-2022-02-23 11:18:23.427  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : getAllEmployes
-2022-02-23 11:18:23.430  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : getAllEmployeNamesJPQL
-2022-02-23 11:18:23.434  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Method getAllEmployeNamesJPQL execution time: 4 milliseconds.
-2022-02-23 11:18:23.434  INFO 20404 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : getAllEmployeNamesJPQL
-2022-02-23 11:18:23.455  INFO 20404 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2022-02-23 11:18:23.457  INFO 20404 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-02-23 11:18:23.459  INFO 20404 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-02-23 11:18:23.593  INFO 20404 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-25 17:35:38.638  INFO 30140 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2022-02-25 17:35:38.640  INFO 30140 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2022-02-25 17:35:38.791  INFO 30140 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-02-25 17:35:38.933  INFO 30140 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-02-25 17:35:39.888  INFO 30140 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 17:35:40.226  INFO 30140 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2022-02-25 17:35:40.822  INFO 30140 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-25 17:35:40.874  WARN 30140 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-25 17:35:41.152  INFO 30140 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/SpringMVC'
+2022-02-25 17:35:41.156  INFO 30140 --- [main] SpringBootCoreDataJpaMvcRest1Application : Started TimesheetSpringBootCoreDataJpaMvcRest1Application in 4.903 seconds (JVM running for 5.743)
+2022-02-25 17:36:04.593  INFO 30140 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-02-25 17:36:04.595  INFO 30140 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 17:36:04.600  INFO 30140 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-25 17:36:04.611  INFO 30140 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-25 17:41:15.130  INFO 19564 --- [main] SpringBootCoreDataJpaMvcRest1Application : Starting TimesheetSpringBootCoreDataJpaMvcRest1Application on LAPTOP-8B01LE5O with PID 19564 (started by zyedz in C:\Users\zyedz\Desktop\Projet Devops\Projet-Devops)
+2022-02-25 17:41:15.135  INFO 19564 --- [main] SpringBootCoreDataJpaMvcRest1Application : No active profile set, falling back to default profiles: default
+2022-02-25 17:41:15.789  INFO 19564 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-02-25 17:41:15.879  INFO 19564 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83ms. Found 6 repository interfaces.
+2022-02-25 17:41:16.181  INFO 19564 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f2c3f7b6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-25 17:41:16.669  INFO 19564 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-02-25 17:41:16.696  INFO 19564 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-25 17:41:16.696  INFO 19564 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2022-02-25 17:41:16.840  INFO 19564 --- [main] o.a.c.c.C.[.[localhost].[/SpringMVC]     : Initializing Spring embedded WebApplicationContext
+2022-02-25 17:41:16.840  INFO 19564 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1665 ms
+2022-02-25 17:41:17.020  INFO 19564 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-25 17:41:17.121  INFO 19564 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-25 17:41:17.183  INFO 19564 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-02-25 17:41:17.288  INFO 19564 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2022-02-25 17:41:17.292  INFO 19564 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2022-02-25 17:41:17.475  INFO 19564 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-02-25 17:41:17.638  INFO 19564 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-02-25 17:41:18.680  INFO 19564 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 17:41:19.136  INFO 19564 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2022-02-25 17:41:19.902  INFO 19564 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-25 17:41:19.956  WARN 19564 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-25 17:41:20.225  INFO 19564 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/SpringMVC'
+2022-02-25 17:41:20.229  INFO 19564 --- [main] SpringBootCoreDataJpaMvcRest1Application : Started TimesheetSpringBootCoreDataJpaMvcRest1Application in 5.482 seconds (JVM running for 6.458)
+2022-02-25 17:41:54.943  INFO 19564 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-02-25 17:41:54.946  INFO 19564 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 17:41:54.951  INFO 19564 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-25 17:41:54.962  INFO 19564 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-25 17:42:34.870  INFO 14048 --- [main] t.esprit.spring.EmployeServiceImplTests  : Starting EmployeServiceImplTests on LAPTOP-8B01LE5O with PID 14048 (started by zyedz in C:\Users\zyedz\Desktop\Projet Devops\Projet-Devops)
+2022-02-25 17:42:34.873  INFO 14048 --- [main] t.esprit.spring.EmployeServiceImplTests  : No active profile set, falling back to default profiles: default
+2022-02-25 17:42:36.136  INFO 14048 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-02-25 17:42:36.294  INFO 14048 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 138ms. Found 6 repository interfaces.
+2022-02-25 17:42:36.989  INFO 14048 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bd95d362] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-25 17:42:37.650  INFO 14048 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-25 17:42:37.896  INFO 14048 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-25 17:42:38.000  INFO 14048 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-02-25 17:42:38.134  INFO 14048 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2022-02-25 17:42:38.138  INFO 14048 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2022-02-25 17:42:38.412  INFO 14048 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-02-25 17:42:38.811  INFO 14048 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-02-25 17:42:40.141  INFO 14048 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 17:42:40.687  INFO 14048 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2022-02-25 17:42:42.060  INFO 14048 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-25 17:42:42.164  WARN 14048 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-25 17:42:42.598  INFO 14048 --- [main] t.esprit.spring.EmployeServiceImplTests  : Started EmployeServiceImplTests in 8.322 seconds (JVM running for 10.076)
+2022-02-25 17:42:42.736  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : ajouterDepartement
+2022-02-25 17:42:42.823  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method ajouterDepartement execution time: 88 milliseconds.
+2022-02-25 17:42:42.824  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : ajouterDepartement
+2022-02-25 17:42:42.824  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : getSalaireMoyenByDepartementId
+2022-02-25 17:42:42.871  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method getSalaireMoyenByDepartementId execution time: 47 milliseconds.
+2022-02-25 17:42:42.871  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : getSalaireMoyenByDepartementId
+2022-02-25 17:42:42.872  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : deleteDepartementById
+2022-02-25 17:42:42.903  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method deleteDepartementById execution time: 31 milliseconds.
+2022-02-25 17:42:42.903  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : deleteDepartementById
+2022-02-25 17:42:42.925  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : ajouterEmploye
+2022-02-25 17:42:42.931  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method ajouterEmploye execution time: 6 milliseconds.
+2022-02-25 17:42:42.931  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : ajouterEmploye
+2022-02-25 17:42:42.932  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : ajouterContrat
+2022-02-25 17:42:42.953  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method ajouterContrat execution time: 21 milliseconds.
+2022-02-25 17:42:42.953  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : ajouterContrat
+2022-02-25 17:42:42.962  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : ajouterEmploye
+2022-02-25 17:42:42.966  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method ajouterEmploye execution time: 4 milliseconds.
+2022-02-25 17:42:42.967  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : ajouterEmploye
+2022-02-25 17:42:42.967  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : mettreAjourEmailByEmployeId
+2022-02-25 17:42:42.985  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method mettreAjourEmailByEmployeId execution time: 18 milliseconds.
+2022-02-25 17:42:42.985  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : mettreAjourEmailByEmployeId
+2022-02-25 17:42:42.985  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : findEmployeById
+2022-02-25 17:42:42.989  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method findEmployeById execution time: 4 milliseconds.
+2022-02-25 17:42:42.990  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : findEmployeById
+2022-02-25 17:42:42.990  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : deleteEmployeById
+2022-02-25 17:42:43.005  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method deleteEmployeById execution time: 15 milliseconds.
+2022-02-25 17:42:43.005  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : deleteEmployeById
+2022-02-25 17:42:43.008  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : ajouterEmploye
+2022-02-25 17:42:43.012  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method ajouterEmploye execution time: 4 milliseconds.
+2022-02-25 17:42:43.013  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : ajouterEmploye
+2022-02-25 17:42:43.013  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : getSalaireByEmployeIdJPQL
+2022-02-25 17:42:43.016  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method getSalaireByEmployeIdJPQL execution time: 3 milliseconds.
+2022-02-25 17:42:43.016  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : getSalaireByEmployeIdJPQL
+2022-02-25 17:42:43.016  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : deleteEmployeById
+2022-02-25 17:42:43.024  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method deleteEmployeById execution time: 8 milliseconds.
+2022-02-25 17:42:43.024  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : deleteEmployeById
+2022-02-25 17:42:43.027  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : ajouterEmploye
+2022-02-25 17:42:43.031  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method ajouterEmploye execution time: 4 milliseconds.
+2022-02-25 17:42:43.032  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : ajouterEmploye
+2022-02-25 17:42:43.032  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : getEmployePrenomById
+2022-02-25 17:42:43.036  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method getEmployePrenomById execution time: 4 milliseconds.
+2022-02-25 17:42:43.037  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : getEmployePrenomById
+2022-02-25 17:42:43.037  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : deleteEmployeById
+2022-02-25 17:42:43.045  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method deleteEmployeById execution time: 7 milliseconds.
+2022-02-25 17:42:43.045  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : deleteEmployeById
+2022-02-25 17:42:43.050  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : getContratById
+2022-02-25 17:42:43.055  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method getContratById execution time: 5 milliseconds.
+2022-02-25 17:42:43.056  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : getContratById
+2022-02-25 17:42:43.064  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : ajouterContrat
+2022-02-25 17:42:43.068  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method ajouterContrat execution time: 4 milliseconds.
+2022-02-25 17:42:43.068  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : ajouterContrat
+2022-02-25 17:42:43.069  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : deleteContratById
+2022-02-25 17:42:43.071  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method deleteContratById execution time: 2 milliseconds.
+2022-02-25 17:42:43.071  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : deleteContratById
+2022-02-25 17:42:43.077  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : ajouterEmploye
+2022-02-25 17:42:43.082  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method ajouterEmploye execution time: 5 milliseconds.
+2022-02-25 17:42:43.082  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : ajouterEmploye
+2022-02-25 17:42:43.083  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : deleteEmployeById
+2022-02-25 17:42:43.085  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method deleteEmployeById execution time: 3 milliseconds.
+2022-02-25 17:42:43.085  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : deleteEmployeById
+2022-02-25 17:42:43.090  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : getAllEmployeByEntreprise
+2022-02-25 17:42:43.095  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method getAllEmployeByEntreprise execution time: 6 milliseconds.
+2022-02-25 17:42:43.095  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : getAllEmployeByEntreprise
+2022-02-25 17:42:43.098  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : ajouterEmploye
+2022-02-25 17:42:43.101  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method ajouterEmploye execution time: 3 milliseconds.
+2022-02-25 17:42:43.101  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : ajouterEmploye
+2022-02-25 17:42:43.102  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : mettreAjourEmailByEmployeIdJPQL
+2022-02-25 17:42:43.107  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method mettreAjourEmailByEmployeIdJPQL execution time: 5 milliseconds.
+2022-02-25 17:42:43.108  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : mettreAjourEmailByEmployeIdJPQL
+2022-02-25 17:42:43.108  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : findEmployeById
+2022-02-25 17:42:43.112  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method findEmployeById execution time: 4 milliseconds.
+2022-02-25 17:42:43.113  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : findEmployeById
+2022-02-25 17:42:43.113  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : deleteEmployeById
+2022-02-25 17:42:43.122  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method deleteEmployeById execution time: 9 milliseconds.
+2022-02-25 17:42:43.122  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : deleteEmployeById
+2022-02-25 17:42:43.126  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : ajouterEmploye
+2022-02-25 17:42:43.129  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method ajouterEmploye execution time: 3 milliseconds.
+2022-02-25 17:42:43.129  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : ajouterEmploye
+2022-02-25 17:42:43.130  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : affecterContratAEmploye
+2022-02-25 17:42:43.136  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method affecterContratAEmploye execution time: 7 milliseconds.
+2022-02-25 17:42:43.136  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : affecterContratAEmploye
+2022-02-25 17:42:43.136  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : getContratById
+2022-02-25 17:42:43.139  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method getContratById execution time: 3 milliseconds.
+2022-02-25 17:42:43.139  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : getContratById
+2022-02-25 17:42:43.142  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : ajouterContrat
+2022-02-25 17:42:43.145  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method ajouterContrat execution time: 3 milliseconds.
+2022-02-25 17:42:43.145  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : ajouterContrat
+2022-02-25 17:42:43.145  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : deleteContratById
+2022-02-25 17:42:43.152  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method deleteContratById execution time: 7 milliseconds.
+2022-02-25 17:42:43.152  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : deleteContratById
+2022-02-25 17:42:43.152  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : getContratById
+2022-02-25 17:42:43.154  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method getContratById execution time: 2 milliseconds.
+2022-02-25 17:42:43.155  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : getContratById
+2022-02-25 17:42:43.158  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : ajouterEmploye
+2022-02-25 17:42:43.162  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method ajouterEmploye execution time: 4 milliseconds.
+2022-02-25 17:42:43.162  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : ajouterEmploye
+2022-02-25 17:42:43.163  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : getEmployePrenomById
+2022-02-25 17:42:43.166  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method getEmployePrenomById execution time: 3 milliseconds.
+2022-02-25 17:42:43.166  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : getEmployePrenomById
+2022-02-25 17:42:43.167  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : deleteEmployeById
+2022-02-25 17:42:43.176  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method deleteEmployeById execution time: 10 milliseconds.
+2022-02-25 17:42:43.176  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : deleteEmployeById
+2022-02-25 17:42:43.177  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : getEmployePrenomById
+2022-02-25 17:42:43.179  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method getEmployePrenomById execution time: 2 milliseconds.
+2022-02-25 17:42:43.179  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : getEmployePrenomById
+2022-02-25 17:42:43.182  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : getNombreEmployeJPQL
+2022-02-25 17:42:43.185  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method getNombreEmployeJPQL execution time: 3 milliseconds.
+2022-02-25 17:42:43.185  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : getNombreEmployeJPQL
+2022-02-25 17:42:43.188  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : ajouterEmploye
+2022-02-25 17:42:43.191  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method ajouterEmploye execution time: 3 milliseconds.
+2022-02-25 17:42:43.191  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : ajouterEmploye
+2022-02-25 17:42:43.199  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : ajouterTimesheet
+2022-02-25 17:42:43.217  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method ajouterTimesheet execution time: 18 milliseconds.
+2022-02-25 17:42:43.218  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : ajouterTimesheet
+2022-02-25 17:42:43.218  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : getTimesheetsByMissionAndDate
+2022-02-25 17:42:43.224  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method getTimesheetsByMissionAndDate execution time: 6 milliseconds.
+2022-02-25 17:42:43.224  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : getTimesheetsByMissionAndDate
+2022-02-25 17:42:43.227  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : deleteEmployeById
+2022-02-25 17:42:43.235  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method deleteEmployeById execution time: 8 milliseconds.
+2022-02-25 17:42:43.235  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : deleteEmployeById
+2022-02-25 17:42:43.235  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : removeTimeSheet
+2022-02-25 17:42:43.242 ERROR 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Unable to find tn.esprit.spring.entities.Employe with id 9; nested exception is javax.persistence.EntityNotFoundException: Unable to find tn.esprit.spring.entities.Employe with id 9
+2022-02-25 17:42:43.242  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method removeTimeSheet execution time: 7 milliseconds.
+2022-02-25 17:42:43.243  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : removeTimeSheet
+2022-02-25 17:42:43.246  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : getAllEmployes
+2022-02-25 17:42:43.264  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method getAllEmployes execution time: 18 milliseconds.
+2022-02-25 17:42:43.265  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : getAllEmployes
+2022-02-25 17:42:43.268  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : In service method  : getAllEmployeNamesJPQL
+2022-02-25 17:42:43.271  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Method getAllEmployeNamesJPQL execution time: 3 milliseconds.
+2022-02-25 17:42:43.272  INFO 14048 --- [main] t.e.s.c.aspect.LoggingAspect             : Out service method  : getAllEmployeNamesJPQL
+2022-02-25 17:42:43.299  INFO 14048 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-02-25 17:42:43.302  INFO 14048 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 17:42:43.306  INFO 14048 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-25 17:42:43.497  INFO 14048 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
