@@ -11,7 +11,7 @@ services:
     volumes:
       - db:/var/lib/mysql
   app:
-    image: zyedziadi1993/projetdevops:26
+    image: zyedziadi1993/projetdevops:${tag}
     depends_on:
       - mysqldb
     restart: on-failure
