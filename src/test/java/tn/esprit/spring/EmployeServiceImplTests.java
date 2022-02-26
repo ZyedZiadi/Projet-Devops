@@ -57,9 +57,9 @@ public class EmployeServiceImplTests {
 	public void ajouterEmployeTest() {
 		Employe employe = new Employe();
 		employe.setActif(false);
-		employe.setEmail("efsffs");
-		employe.setNom("aaaa");
-		employe.setPrenom("sfsfe");
+		employe.setEmail("zyedmail");
+		employe.setNom("zyed");
+		employe.setPrenom("ziadi");
 		int id = employeService.ajouterEmploye(employe);
 		Assert.assertEquals(employeService.getEmployePrenomById(id), employe.getPrenom());
 		employeService.deleteEmployeById(id);
@@ -198,7 +198,6 @@ public class EmployeServiceImplTests {
 		contrat.setTypeContrat(null);
 		
 		employeService.ajouterEmploye(employe);
-		//int ctrId = employeService.ajouterContrat(contrat);
 		
 		employeService.affecterContratAEmploye(contrat.getReference(), employe.getId());
 		Contrat ctr = employeService.getContratById(contrat.getReference());
@@ -259,32 +258,7 @@ public class EmployeServiceImplTests {
 		assertEquals(false, employesAfterDeleteAction.isPresent());
 		
 	}
-	/*@Test
-	public void desaffecterEmployeDuDepartementTest() {
-		List<Employe> empls = new ArrayList<>();
-		Employe employe= new Employe();
-		employe.setId(new Random().nextInt(999));
-		employe.setActif(false);
-		employe.setEmail("efsffs");
-		employe.setNom("aaaa");
-		employe.setPrenom("sfsfe");
-		employeService.ajouterEmploye(employe);
-		empls.add(employe);
-		
-		Departement departement = new Departement();
-		departement.setId(101);
-		departement.setName(null);
-		departement.setEntreprise(null);
-		departement.setEmployes(empls);
-		entrepriseService.ajouterDepartement(departement);
-		
-		employeService.affecterEmployeADepartement(employe.getId(),departement.getId());
-		assertNotNull(departement.getEmployes());
-	
-		employeService.desaffecterEmployeDuDepartement(employe.getId(), departement.getId());
-		assertNull(departement.getEmployes());
-		
-	}*/
+
 	@Test
 	public void getAllEmployeByEntreprise() {
 		    Entreprise entreprise = new Entreprise();

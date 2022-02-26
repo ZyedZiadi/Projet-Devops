@@ -12,6 +12,6 @@ public class TimesheetSpringBootCoreDataJpaMvcRest1Application {
 		SpringApplication.run(TimesheetSpringBootCoreDataJpaMvcRest1Application.class, args);
 	}
 
-	
+
 
 }
